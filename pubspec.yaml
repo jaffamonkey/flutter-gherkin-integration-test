@@ -25,9 +25,8 @@ dev_dependencies:
   integration_test:
     sdk: flutter
   build_runner:
-  flutter_gherkin:
-    path: ../
+  flutter_gherkin: 3.0.0-rc.2
 
 flutter:
 
-  uses-material-design: true
+   uses-material-design: true
