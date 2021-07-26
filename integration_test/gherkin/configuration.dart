@@ -7,8 +7,7 @@ import 'package:gherkin/gherkin.dart';
 
 import 'hooks/reset_app_hook.dart';
 import 'steps/expect_todos_step.dart';
-import 'steps/i_am_logged_in_as.dart';
-import 'steps/i_open_the_app.dart';
+import 'steps/common_steps.dart';
 import 'steps/when_await_animation.dart';
 import 'steps/when_step_has_timeout.dart';
 import 'steps/check_decimal_places.dart';
