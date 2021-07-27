@@ -1,4 +1,4 @@
-name: example_with_integration_test
+name: flutter_gherkin_integration_test
 description: A new Flutter project.
 
 publish_to: 'none'

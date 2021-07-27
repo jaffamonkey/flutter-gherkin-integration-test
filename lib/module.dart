@@ -1,4 +1,4 @@
-import 'package:example_with_integration_test/widgets/views/home_view.dart';
+import 'package:flutter_gherkin_integration_test/widgets/views/home_view.dart';
 import 'package:flutter_simple_dependency_injection/injector.dart';
 
 import 'blocs/todo_bloc.dart';

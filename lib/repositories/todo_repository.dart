@@ -1,7 +1,7 @@
 import 'dart:async';
 import 'dart:convert';
 
-import 'package:example_with_integration_test/models/todo_model.dart';
+import 'package:flutter_gherkin_integration_test/models/todo_model.dart';
 import 'package:rxdart/rxdart.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

@@ -1,5 +1,5 @@
-import 'package:example_with_integration_test/main.dart';
-import 'package:example_with_integration_test/services/external_application_manager.dart';
+import 'package:flutter_gherkin_integration_test/main.dart';
+import 'package:flutter_gherkin_integration_test/services/external_application_manager.dart';
 import 'package:flutter/widgets.dart';
 import 'package:flutter_gherkin/flutter_gherkin.dart';
 import 'package:flutter_simple_dependency_injection/injector.dart';
