@@ -48,7 +48,7 @@ class _AddTodoComponentState extends State<AddTodoComponent>
                 right: 16,
               ),
               child: SizedBox(
-                width: 280,
+                width: 300,
                 child: TextFormField(
                   controller: _textEditingController,
                   style: Theme.of(context).textTheme.subtitle1,
