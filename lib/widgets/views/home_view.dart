@@ -1,7 +1,7 @@
-import 'package:flutter_gherkin_integration_test/blocs/todo_bloc.dart';
-import 'package:flutter_gherkin_integration_test/models/todo_model.dart';
-import 'package:flutter_gherkin_integration_test/models/todo_status_enum.dart';
-import 'package:flutter_gherkin_integration_test/widgets/components/add_todo_component.dart';
+import 'package:example_with_integration_test/blocs/todo_bloc.dart';
+import 'package:example_with_integration_test/models/todo_model.dart';
+import 'package:example_with_integration_test/models/todo_status_enum.dart';
+import 'package:example_with_integration_test/widgets/components/add_todo_component.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter/widgets.dart';
 

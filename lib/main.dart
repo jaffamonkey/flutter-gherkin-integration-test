@@ -1,4 +1,4 @@
-import 'package:flutter_gherkin_integration_test/services/external_application_manager.dart';
+import 'package:example_with_integration_test/services/external_application_manager.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_simple_dependency_injection/injector.dart';
 

@@ -1,4 +1,4 @@
-import 'package:flutter_gherkin_integration_test/models/todo_status_enum.dart';
+import 'package:example_with_integration_test/models/todo_status_enum.dart';
 import 'package:json_annotation/json_annotation.dart';
 
 part 'todo_model.g.dart';
