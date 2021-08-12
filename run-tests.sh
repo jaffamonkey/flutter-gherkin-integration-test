@@ -1,6 +1,7 @@
 #!/bin/bash
 
-#echo 'Extracting tests.zip...'
+echo 'BITBAR IOS APP TEST SHELL SCRIPT'
+echo 'Extracting tests.zip...'
 yes | unzip tests.zip
 
 mv application.ipa application.zip
