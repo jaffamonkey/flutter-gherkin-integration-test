@@ -29,8 +29,8 @@ RUN flutter doctor
 
 RUN cd /home/developer/Android/Sdk/tools/bin
 RUN ls -la
-RUN echo "no" | ./avdmanager --verbose create avd --force --name "generic_10" --package "system-images;android-29;default;x86" --tag "default" --abi "x86"
-RUN ./emulator @generic_10 &
+RUN echo "no" | avdmanager --verbose create avd --force --name "generic_10" --package "system-images;android-29;default;x86" --tag "default" --abi "x86"
+RUN emulator @generic_10 &
 
 RUN cd && ls && git clone https://github.com/jaffamonkey/flutter-gherkin-integration-test.git
 
