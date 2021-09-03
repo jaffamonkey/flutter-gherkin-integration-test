@@ -28,6 +28,14 @@ You can debug the tests by adding a breakpoint to line 12 in `integration_test\g
 
 ## Docker
 
+[Install Docker Desktop](https://docs.docker.com/engine/install/)
+Start Docker Desktop running (no need to Sign in)
+When it has started (can take up to a 1 minute), run the following command
 ```
 docker build -t flutter-integration-testing .
 ```
+This will:
+- Build an Ubunutu docker container
+- Android SDK, Emulator and Flutter SDK installed
+- Emulator created and started
+- Integration test run executed
