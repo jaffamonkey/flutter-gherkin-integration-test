@@ -21,18 +21,16 @@ RUN cd Android/Sdk/tools/bin && yes | ./sdkmanager --licenses
 RUN cd Android/Sdk/tools/bin && ./sdkmanager "build-tools;29.0.2" "patcher;v4" "platform-tools" "platforms;android-29" "sources;android-29"
 
 # Download Flutter SDK
-RUN cd && git clone https://github.com/flutter/flutter.git
+RUN git clone https://github.com/flutter/flutter.git
 ENV PATH "$PATH:/home/developer/flutter/bin"
 
 # Run basic check to download Dark SDK
 RUN flutter doctor
 
-RUN cd /home/developer/Android/Sdk/tools/bin
-RUN ls -la
-RUN echo "no" | avdmanager --verbose create avd --force --name "generic_10" --package "system-images;android-29;default;x86" --tag "default" --abi "x86"
-RUN emulator @generic_10 &
+RUN cd Android/Sdk/tools/bin && echo "no" | avdmanager --verbose create avd --force --name "generic_10" --package "system-images;android-29;default;x86" --tag "default" --abi "x86"
+RUN cd Android/Sdk/tools/bin && emulator @generic_10 &
 
-RUN cd && ls && git clone https://github.com/jaffamonkey/flutter-gherkin-integration-test.git
+RUN git clone https://github.com/jaffamonkey/flutter-gherkin-integration-test.git
 
 RUN cd flutter-gherkin-integration-test
 RUN flutter pub get
