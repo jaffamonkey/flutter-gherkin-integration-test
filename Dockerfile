@@ -18,7 +18,7 @@ RUN wget -O sdk-tools.zip https://dl.google.com/android/repository/sdk-tools-lin
 RUN unzip sdk-tools.zip && rm sdk-tools.zip
 RUN mv tools Android/Sdk/tools
 RUN cd Android/Sdk/tools/bin && yes | ./sdkmanager --licenses
-RUN cd Android/Sdk/tools/bin && ./sdkmanager "system-images;android-29;google_apis;x86_64"
+RUN cd Android/Sdk/tools/bin && ./sdkmanager "system-images;android-29;google_apis;x86"
 
 # Download Flutter SDK
 RUN git clone https://github.com/flutter/flutter.git
@@ -27,7 +27,7 @@ ENV PATH "$PATH:/home/developer/flutter/bin"
 # Run basic check to download Dark SDK
 RUN flutter doctor
 
-RUN cd Android/Sdk/tools/bin && echo "no" | ./avdmanager create avd -n TestAVD -k "system-images;android-39;google_apis;x86_64" --device "Pixel_4"
+RUN cd Android/Sdk/tools/bin && echo "no" | ./avdmanager --verbose create avd --force --name "generic_10" --package "system-images;android-29;default;x86" --tag "default" --abi "x86"
 RUN cd Android/Sdk/tools/bin && ./emulator TestAVD &
 
 RUN git clone https://github.com/jaffamonkey/flutter-gherkin-integration-test.git

@@ -25,3 +25,9 @@ You can debug the tests by adding a breakpoint to line 12 in `integration_test\g
   ],
 }
 ```
+
+## Docker
+
+```
+docker build -t flutter-integration-testing .
+```
