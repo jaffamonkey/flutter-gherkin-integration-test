@@ -23,7 +23,7 @@ RUN cd Android/Sdk/tools/bin && ./sdkmanager "system-images;android-29;google_ap
 # Download Flutter SDK
 RUN git clone https://github.com/flutter/flutter.git
 ENV PATH "$PATH:/home/developer/flutter/bin"
-
+RUN cd Android/Sdk/tools/bin && yes | ./sdkmanager --licenses
 # Run basic check to download Dark SDK
 RUN flutter doctor
 
