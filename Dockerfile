@@ -27,10 +27,11 @@ ENV PATH "$PATH:/home/developer/flutter/bin"
 # Run basic check to download Dark SDK
 RUN flutter doctor
 
-RUN echo "no" | avdmanager --verbose create avd --force --name "generic_10" --package "system-images;android-29;default;x86" --tag "default" --abi "x86"
-RUN emulator @generic_10 &
+RUN cd /home/developer/Android/Sdk/tools/bin
+RUN echo "no" | ./avdmanager --verbose create avd --force --name "generic_10" --package "system-images;android-29;default;x86" --tag "default" --abi "x86"
+RUN ./emulator @generic_10 &
 
-RUN git clone https://github.com/jaffamonkey/flutter-gherkin-integration-test.git
+RUN cd && git clone https://github.com/jaffamonkey/flutter-gherkin-integration-test.git
 
 RUN cd flutter-gherkin-integration-test
 RUN flutter pub get
