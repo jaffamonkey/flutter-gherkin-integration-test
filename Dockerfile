@@ -28,6 +28,7 @@ ENV PATH "$PATH:/home/developer/flutter/bin"
 RUN flutter doctor
 
 RUN cd /home/developer/Android/Sdk/tools/bin
+RUN ls -la
 RUN echo "no" | ./avdmanager --verbose create avd --force --name "generic_10" --package "system-images;android-29;default;x86" --tag "default" --abi "x86"
 RUN ./emulator @generic_10 &
 
