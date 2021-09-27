@@ -1,10 +1,13 @@
 This repo is based on example provided in [Flutter Gherkin](https://github.com/search?q=user%3Ajaffamonkey+flutter+gherkin)
 
-## Run tests
+## Run tests (Android or IOS)
 ```
 flutter drive --driver=test_driver/integration_test_driver.dart --target=integration_test/gherkin_suite_test.dart
 ```
-
+## Run tests using existing application (iOS)
+```
+flutter-2.2.0 drive -v --use-application-binary build/ios/iphoneos/Runner.app --driver=test_driver/integration_test_driver.dart --target=integration_test/gherkin_suite_test.dart
+````
 ## Add new tests
 If you change any of the feature files you will need to re-generate the tests using the below command
 _You might need to run the clean command first if you have just changed feature files_
